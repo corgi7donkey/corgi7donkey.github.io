@@ -1,0 +1,795 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="个人博客搭建入门系列一  
+
+系统：Windows8.1
+需要安装的软件有：Git，Node.js，Hexo，Sublime_Text(可选用于查看内容)
+注册github账号">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo-github搭建个人博客入门">
+<meta property="og:url" content="http://corgi7donkey.github.io/2016/12/09/hexo-github搭建个人博客入门/index.html">
+<meta property="og:site_name" content="CorgiDonkey博客">
+<meta property="og:description" content="个人博客搭建入门系列一  
+
+系统：Windows8.1
+需要安装的软件有：Git，Node.js，Hexo，Sublime_Text(可选用于查看内容)
+注册github账号">
+<meta property="og:image" content="http://corgi7donkey.github.io/img/搭建博客1/a.png">
+<meta property="og:image" content="http://corgi7donkey.github.io/img/搭建博客1/b.png">
+<meta property="og:image" content="http://corgi7donkey.github.io/img/搭建博客1/c.png">
+<meta property="og:image" content="http://corgi7donkey.github.io/img/搭建博客1/d.png">
+<meta property="og:image" content="http://corgi7donkey.github.io/img/搭建博客1/e.png">
+<meta property="og:image" content="http://corgi7donkey.github.io/img/搭建博客1/f.png">
+<meta property="og:image" content="http://corgi7donkey.github.io/img/搭建博客1/g.png">
+<meta property="og:image" content="http://corgi7donkey.github.io/img/搭建博客1/h.png">
+<meta property="og:image" content="http://corgi7donkey.github.io/img/搭建博客1/i.png">
+<meta property="og:image" content="http://corgi7donkey.github.io/img/搭建博客1/j.png">
+<meta property="og:image" content="http://corgi7donkey.github.io/img/搭建博客1/k.png">
+<meta property="og:image" content="http://corgi7donkey.github.io/img/搭建博客1/l.png">
+<meta property="og:image" content="http://corgi7donkey.github.io/img/搭建博客1/m.png">
+<meta property="og:image" content="http://corgi7donkey.github.io/img/搭建博客1/n.png">
+<meta property="og:image" content="http://corgi7donkey.github.io/img/搭建博客1/o.png">
+<meta property="og:image" content="http://corgi7donkey.github.io/img/搭建博客1/p.png">
+<meta property="og:image" content="http://corgi7donkey.github.io/img/搭建博客1/q.png">
+<meta property="og:image" content="http://corgi7donkey.github.io/img/搭建博客1/r.png">
+<meta property="og:image" content="http://corgi7donkey.github.io/img/搭建博客1/s.png">
+<meta property="og:image" content="http://corgi7donkey.github.io/img/搭建博客1/t.png">
+<meta property="og:updated_time" content="2016-12-09T11:43:10.294Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="hexo-github搭建个人博客入门">
+<meta name="twitter:description" content="个人博客搭建入门系列一  
+
+系统：Windows8.1
+需要安装的软件有：Git，Node.js，Hexo，Sublime_Text(可选用于查看内容)
+注册github账号">
+<meta name="twitter:image" content="http://corgi7donkey.github.io/img/搭建博客1/a.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"right","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://corgi7donkey.github.io/2016/12/09/hexo-github搭建个人博客入门/"/>
+
+
+
+
+
+  <title> hexo-github搭建个人博客入门 | CorgiDonkey博客 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">CorgiDonkey博客</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">蜗牛的坚持</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://corgi7donkey.github.io/2016/12/09/hexo-github搭建个人博客入门/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="CorgiDonkey">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/kenan.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="CorgiDonkey博客">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="CorgiDonkey博客" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                hexo-github搭建个人博客入门
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-09T15:12:07+08:00">
+                2016-12-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/博客搭建系列/" itemprop="url" rel="index">
+                    <span itemprop="name">博客搭建系列</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>个人博客搭建入门系列一  </p>
+<ul>
+<li>系统：Windows8.1</li>
+<li>需要安装的软件有：Git，Node.js，Hexo，Sublime_Text(可选用于查看内容)</li>
+<li>注册github账号<a id="more"></a>
+</li>
+</ul>
+<hr>
+<p><strong>搭建流程</strong>  </p>
+<h2 id="一、安装搭建本地Hexo博客"><a href="#一、安装搭建本地Hexo博客" class="headerlink" title="一、安装搭建本地Hexo博客"></a>一、安装搭建本地Hexo博客</h2><h3 id="1，下载安装软件"><a href="#1，下载安装软件" class="headerlink" title="1，下载安装软件"></a>1，下载安装软件</h3><p>去官网下载<a href="https://git-scm.com/downloads" title="Git下载" target="_blank" rel="external">Git</a>，<a href="https://nodejs.org/en/" title="Node.js下载" target="_blank" rel="external">Node.js</a>和<a href="http://rj.baidu.com/soft/detail/15554.html?ald" title="Sublime_Text下载地址" target="_blank" rel="external">Sublime_Text</a>并安装，一直next就可以了。  </p>
+<h3 id="2，验证是否正确安装"><a href="#2，验证是否正确安装" class="headerlink" title="2，验证是否正确安装"></a>2，验证是否正确安装</h3><p>进入cmd，输入下面命令查看版本。可以查看安装成功。    </p>
+<blockquote>
+<p>git –version<br>node -v </p>
+</blockquote>
+<h3 id="3，安装Hexo"><a href="#3，安装Hexo" class="headerlink" title="3，安装Hexo"></a>3，安装Hexo</h3><p>(1) 在电脑上新建一个blog文件夹，右击进入git bash  </p>
+<p><img src="/img/搭建博客1/a.png" alt="image">  </p>
+<p>(2) 安装hexo为了避免出现类似情况，使用淘宝NPM镜像,输入以下命令等待安装完成</p>
+<blockquote>
+<p>npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="external">https://registry.npm.taobao.org</a>  </p>
+</blockquote>
+<p><img src="/img/搭建博客1/b.png" alt="image">   </p>
+<p>(3) 使用淘宝NPM安装Hexo</p>
+<blockquote>
+<p>cnpm install -g hexo-cli  </p>
+</blockquote>
+<p><img src="/img/搭建博客1/c.png" alt="image">  </p>
+<p>(4) 继续下面命令 </p>
+<blockquote>
+<p>   cnpm install hexo –save  </p>
+</blockquote>
+<p>(5) 安装成功后，验证是否正确  </p>
+<blockquote>
+<p>   hexo -v  </p>
+</blockquote>
+<p><img src="/img/搭建博客1/d.png" alt="image">  </p>
+<h3 id="4，本地运行hexo"><a href="#4，本地运行hexo" class="headerlink" title="4，本地运行hexo"></a>4，本地运行hexo</h3><p>（1）初始化hexo  </p>
+<blockquote>
+<p>   hexo init  </p>
+</blockquote>
+<p><img src="/img/搭建博客1/e.png" alt="image">  </p>
+<p>（2）安装生成器  </p>
+<blockquote>
+<p>   cnpm install  </p>
+</blockquote>
+<p><img src="/img/搭建博客1/f.png" alt="image">  </p>
+<p>（3）以后要在本地运行博客只要输入该命令即可  </p>
+<blockquote>
+<p>   hexo s -g  </p>
+</blockquote>
+<p><img src="/img/搭建博客1/g.png" alt="image">  </p>
+<p>（4）打开浏览器，输入localhost:4000,就可以在本地看到你的个人博客了   </p>
+<p><img src="/img/搭建博客1/h.png" alt="image">  </p>
+<p>（5）停止运行 </p>
+<blockquote>
+<p>按住Ctrl+C键即可停止  </p>
+</blockquote>
+<h2 id="二、搭建github博客"><a href="#二、搭建github博客" class="headerlink" title="二、搭建github博客"></a>二、搭建github博客</h2><h3 id="1，注册github"><a href="#1，注册github" class="headerlink" title="1，注册github"></a>1，注册github</h3><p><a href="https://github.com/" title="github官网" target="_blank" rel="external">github</a>注册比较简单，就不在这里啰嗦了。。。</p>
+<h3 id="2，新建仓库"><a href="#2，新建仓库" class="headerlink" title="2，新建仓库"></a>2，新建仓库</h3><p>（1）新建仓库方法1，点击start a project 方法2， 点击New repository  </p>
+<p><img src="/img/搭建博客1/i.png" alt="image">  </p>
+<p>（2）输入Repository name:yourname.github.io(yourname与你的注册用户名一致,这个就是你博客的域名了)  </p>
+<p><img src="/img/搭建博客1/j.png" alt="image">  </p>
+<p>（3）到此github仓库创建完成  </p>
+<p><img src="/img/搭建博客1/k.png" alt="image">  </p>
+<h3 id="3，启用并设置"><a href="#3，启用并设置" class="headerlink" title="3，启用并设置"></a>3，启用并设置</h3><p>（1）点击右边的“Setting”菜单进入设置,点击”Launch automatic page generator”  </p>
+<p><img src="/img/搭建博客1/l.png" alt="image">  </p>
+<p>（2）点击底部的”Continue to layouts”  </p>
+<p><img src="/img/搭建博客1/m.png" alt="image">  </p>
+<p>（3）最后点击”Publish page”,发布github默认生成的一个静态站点  </p>
+<p><img src="/img/搭建博客1/n.png" alt="image">  </p>
+<p>（4）验证邮箱 点击个人设置  </p>
+<p><img src="/img/搭建博客1/o.png" alt="image">  </p>
+<p>（5）点击”Send verification Email”发送验证邮件  </p>
+<p><img src="/img/搭建博客1/p.png" alt="image">  </p>
+<p>（6）进入你的邮箱，查收验证邮件进行验证  </p>
+<p><img src="/img/搭建博客1/q.png" alt="image">  </p>
+<h2 id="三、将Hexo与github博客联系在一起"><a href="#三、将Hexo与github博客联系在一起" class="headerlink" title="三、将Hexo与github博客联系在一起"></a>三、将Hexo与github博客联系在一起</h2><h3 id="1-配置信息"><a href="#1-配置信息" class="headerlink" title="1,配置信息"></a>1,配置信息</h3><p>使用安装好的Sublime_Text编辑器，打开blog/_config.yml文件，进行配置。下面是我的配置,关键的地方用<font color="#ff0000">红色字体</font> 标记了  </p>
+<blockquote>
+<p>#博客名称<br>title: CorgiDonkey博客<br>#副标题<br>subtitle: 蜗牛的坚持<br>#简介<br>description: 学习记录<br>#博客作者<br>author: CorgiDonkey<br>#博客语言<br>language: zh-Hans<br>#时区<br>timezone:  </p>
+<p> <font color="#ff0000">#博客地址,与申请的GitHub一致</font><br>url: <a href="http://corgi7donkey.github.io">http://corgi7donkey.github.io</a><br>root: /<br>#博客链接格式<br>permalink: :year/:month/:day/:title/<br>permalink_defaults:  </p>
+<p>source_dir: source<br>public_dir: public<br>tag_dir: tags<br>archive_dir: archives<br>category_dir: categories<br>code_dir: downloads/code<br>i18n_dir: :lang<br>skip_render:  </p>
+<p>new_post_name: :title.md # File name of new posts<br>default_layout: post<br>titlecase: false # Transform title into titlecase<br>external_link: true # Open external links in new tab<br>filename_case: 0<br>render_drafts: false<br>post_asset_folder: false<br>relative_link: false<br>future: true<br>highlight:<br>  enable: true<br>  line_number: true<br>  auto_detect: true<br>  tab_replace:  </p>
+<p>default_category: uncategorized<br>category_map:<br>tag_map:  </p>
+<p>#日期格式<br>date_format: YYYY-MM-DD<br>time_format: HH:mm:ss  </p>
+<p>#分页，每页文章数量<br>per_page: 10<br>pagination_dir: page  </p>
+<p>#博客主题<br>theme: next  </p>
+<p>#发布设置<br>deploy:<br>  type: git<br>  <font color="#ff0000">#elfwalk改为你的github用户名</font><br>  repository: <a href="https://github.com/corgi7donkey/corgi7donkey.github.io.git" target="_blank" rel="external">https://github.com/corgi7donkey/corgi7donkey.github.io.git</a><br>  branch: master  </p>
+</blockquote>
+<h3 id="2-发布博客"><a href="#2-发布博客" class="headerlink" title="2,发布博客"></a>2,发布博客</h3><p>（1）设置git身份信息  </p>
+<blockquote>
+<p>$ git config –global user.name “你的用户名”<br>$ git config –global user.email “你的邮箱”  </p>
+</blockquote>
+<p><img src="/img/搭建博客1/r.png" alt="image">   </p>
+<p>（2）安装hexo git插件  </p>
+<blockquote>
+<p>$ cnpm install hexo-deployer-git –save  </p>
+</blockquote>
+<p><img src="/img/搭建博客1/s.png" alt="image">   </p>
+<p>（3）发布更新博客  发布时需要输入github的帐号和密码，输入密码时是看不到自己输入的内容的   </p>
+<blockquote>
+<p>$ hexo d -g  </p>
+</blockquote>
+<p><img src="/img/搭建博客1/t.png" alt="image"> </p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/12/08/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/12/09/hexo-github更换主题/" rel="prev" title="hexo-github更换主题">
+                hexo-github更换主题 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/kenan.jpg"
+               alt="CorgiDonkey" />
+          <p class="site-author-name" itemprop="name">CorgiDonkey</p>
+          <p class="site-description motion-element" itemprop="description">学习记录</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、安装搭建本地Hexo博客"><span class="nav-number">1.</span> <span class="nav-text">一、安装搭建本地Hexo博客</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1，下载安装软件"><span class="nav-number">1.1.</span> <span class="nav-text">1，下载安装软件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2，验证是否正确安装"><span class="nav-number">1.2.</span> <span class="nav-text">2，验证是否正确安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3，安装Hexo"><span class="nav-number">1.3.</span> <span class="nav-text">3，安装Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4，本地运行hexo"><span class="nav-number">1.4.</span> <span class="nav-text">4，本地运行hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、搭建github博客"><span class="nav-number">2.</span> <span class="nav-text">二、搭建github博客</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1，注册github"><span class="nav-number">2.1.</span> <span class="nav-text">1，注册github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2，新建仓库"><span class="nav-number">2.2.</span> <span class="nav-text">2，新建仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3，启用并设置"><span class="nav-number">2.3.</span> <span class="nav-text">3，启用并设置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、将Hexo与github博客联系在一起"><span class="nav-number">3.</span> <span class="nav-text">三、将Hexo与github博客联系在一起</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-配置信息"><span class="nav-number">3.1.</span> <span class="nav-text">1,配置信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-发布博客"><span class="nav-number">3.2.</span> <span class="nav-text">2,发布博客</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">CorgiDonkey</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>

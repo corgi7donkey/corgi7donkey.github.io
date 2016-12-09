@@ -84,16 +84,30 @@
 
 
 
-<meta name="description" content="未完待续。。。">
+<meta name="description" content="个人博客搭建入门系列二在下用的主题是Next，星级最多的主题之一！本文主要内容：  
+
+下载Next主题  
+配置主题">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo-github更换主题">
 <meta property="og:url" content="http://corgi7donkey.github.io/2016/12/09/hexo-github更换主题/index.html">
 <meta property="og:site_name" content="CorgiDonkey博客">
-<meta property="og:description" content="未完待续。。。">
-<meta property="og:updated_time" content="2016-12-09T11:45:49.431Z">
+<meta property="og:description" content="个人博客搭建入门系列二在下用的主题是Next，星级最多的主题之一！本文主要内容：  
+
+下载Next主题  
+配置主题">
+<meta property="og:image" content="http://corgi7donkey.github.io/img/搭建博客主题2/a.png">
+<meta property="og:image" content="http://corgi7donkey.github.io/img/搭建博客主题2/b.png">
+<meta property="og:image" content="http://corgi7donkey.github.io/img/搭建博客主题2/c.png">
+<meta property="og:image" content="http://corgi7donkey.github.io/img/搭建博客主题2/d.png">
+<meta property="og:updated_time" content="2016-12-09T13:07:36.156Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo-github更换主题">
-<meta name="twitter:description" content="未完待续。。。">
+<meta name="twitter:description" content="个人博客搭建入门系列二在下用的主题是Next，星级最多的主题之一！本文主要内容：  
+
+下载Next主题  
+配置主题">
+<meta name="twitter:image" content="http://corgi7donkey.github.io/img/搭建博客主题2/a.png">
 
 
 
@@ -349,8 +363,80 @@
       
 
       
-        <p>未完待续。。。</p>
-
+        <p>个人博客搭建入门系列二<br>在下用的主题是<a href="http://theme-next.iissnan.com/getting-started.html" title="Next具体说明" target="_blank" rel="external">Next</a>，星级最多的主题之一！<br>本文主要内容：  </p>
+<ol>
+<li>下载Next主题  </li>
+<li>配置主题  </li>
+</ol>
+<a id="more"></a>  
+<h2 id="下载主题"><a href="#下载主题" class="headerlink" title="下载主题"></a>下载主题</h2><p>进入与themes同目录下，点击右键进入Git base here。输入下面命令  </p>
+<blockquote>
+<p>git clone <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">https://github.com/iissnan/hexo-theme-next</a> themes/next  </p>
+</blockquote>
+<h2 id="配置主题"><a href="#配置主题" class="headerlink" title="配置主题"></a>配置主题</h2><h3 id="（1）启用主题"><a href="#（1）启用主题" class="headerlink" title="（1）启用主题"></a>（1）启用主题</h3><p>与所有 Hexo 主题启用的模式一样。 当 克隆/下载 完成后，打开 站点配置文件_config.yml， 找到 theme 字段，并将其值更改为 next。  </p>
+<blockquote>
+<p>theme: next  </p>
+</blockquote>
+<h3 id="（2）验证主题"><a href="#（2）验证主题" class="headerlink" title="（2）验证主题"></a>（2）验证主题</h3><p>首先启动 Hexo 本地站点，并开启调试模式（即加上 <code>--debug</code>），整个命令是<br><code>hexo s --debug</code>。 在服务启动的过程，注意观察命令行输出是否有任何异常信息，如果你碰到问题，这些信息将帮助他人更好的定位错误。 当命令行输出中提示出：  </p>
+<blockquote>
+<p>INFO  Hexo is running at <a href="http://0.0.0.0:4000/" target="_blank" rel="external">http://0.0.0.0:4000/</a>. Press Ctrl+C to stop.</p>
+</blockquote>
+<p>此时即可使用浏览器访问 <a href="http://localhost:4000，检查站点是否正确运行。" target="_blank" rel="external">http://localhost:4000，检查站点是否正确运行。</a>  </p>
+<p><img src="/img/搭建博客主题2/a.png" alt="image">  </p>
+<h3 id="（3）选择-Scheme"><a href="#（3）选择-Scheme" class="headerlink" title="（3）选择 Scheme"></a>（3）选择 Scheme</h3><p>Scheme 是 NexT 提供的一种特性，借助于 Scheme，NexT 为你提供多种不同的外观。同时，几乎所有的配置都可以 在 Scheme 之间共用。目前 NexT 支持三种 Scheme，他们是：  </p>
+<ul>
+<li>Muse - 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量留白</li>
+<li>Mist - Muse 的紧凑版本，整洁有序的单栏外观</li>
+<li>Pisces - 双栏 Scheme，小家碧玉似的清新  </li>
+</ul>
+<p>Scheme 的切换通过更改 主题配置文件，搜索 scheme 关键字。 你会看到有三行 scheme 的配置，将你需用启用的 scheme 前面注释 # 即可。  </p>
+<blockquote>
+<p>#scheme: Muse<br>#scheme: Mist<br>scheme: Pisces</p>
+</blockquote>
+<h3 id="（4）设置-语言"><a href="#（4）设置-语言" class="headerlink" title="（4）设置 语言"></a>（4）设置 语言</h3><p>编辑 站点配置文件， 将 language 设置成你所需要的语言。建议明确设置你所需要的语言，例如选用简体中文，配置如下：  </p>
+<blockquote>
+<p>language: zh-Hans  </p>
+</blockquote>
+<p>目前 NexT 支持的语言如以下表格所示：  </p>
+<p><img src="/img/搭建博客主题2/b.png" alt="image">  </p>
+<h3 id="（5）设置-菜单"><a href="#（5）设置-菜单" class="headerlink" title="（5）设置 菜单"></a>（5）设置 菜单</h3><p>菜单配置包括三个部分，第一是菜单项（名称和链接），第二是菜单项的显示文本，第三是菜单项对应的图标。 NexT 使用的是 Font Awesome 提供的图标， Font Awesome 提供了 600+ 的图标，可以满足绝大的多数的场景，同时无须担心在 Retina 屏幕下 图标模糊的问题。</p>
+<p>编辑 主题配置文件，修改以下内容： </p>
+<h4 id="设定菜单内容"><a href="#设定菜单内容" class="headerlink" title="设定菜单内容"></a>设定菜单内容</h4><p>设定菜单内容，对应的字段是 menu。 菜单内容的设置格式是：item name: link。其中 item name 是一个名称，这个名称并不直接显示在页面上，她将用于匹配图标以及翻译。  </p>
+<blockquote>
+<p>menu:<br>  home: /<br>  archives: /archives<br>  #about: /about<br>  #categories: /categories<br>  tags: /tags<br>  #commonweal: /404.html  </p>
+</blockquote>
+<p>NexT 默认的菜单项有（标注  的项表示需要手动创建这个页面）：   </p>
+<p><img src="/img/搭建博客主题2/c.png" alt="image">  </p>
+<h4 id="设置菜单项的显示文本"><a href="#设置菜单项的显示文本" class="headerlink" title="设置菜单项的显示文本"></a>设置菜单项的显示文本</h4><p>在第一步中设置的菜单的名称并不直接用于界面上的展示。Hexo 在生成的时候将使用 这个名称查找对应的语言翻译，并提取显示文本。这些翻译文本放置在 NexT 主题目录下的 languages/{language}.yml （{language} 为你所使用的语言）。</p>
+<p>以简体中文为例，若你需要添加一个菜单项，比如 something。那么就需要修改简体中文对应的翻译文件 languages/zh-Hans.yml，在 menu 字段下添加一项：  </p>
+<blockquote>
+<p>menu:<br>  home: 首页<br>  archives: 归档<br>  categories: 分类<br>  tags: 标签<br>  about: 关于<br>  search: 搜索<br>  commonweal: 公益404<br>  something: 有料  </p>
+</blockquote>
+<h4 id="设定菜单项的图标"><a href="#设定菜单项的图标" class="headerlink" title="设定菜单项的图标"></a>设定菜单项的图标</h4><p>设定菜单项的图标，对应的字段是 menu_icons。 此设定格式是 item name: icon name，其中 item name 与上一步所配置的菜单名字对应，icon name 是 Font Awesome 图标的 名字。而 enable 可用于控制是否显示图标，你可以设置成 false 来去掉图标。  </p>
+<blockquote>
+<p>menu_icons:<br>  enable: true<br>  # Icon Mapping.<br>  home: home<br>  about: user<br>  categories: th<br>  tags: tags<br>  archives: archive<br>  commonweal: heartbeat  </p>
+</blockquote>
+<h3 id="（6）设置-侧栏"><a href="#（6）设置-侧栏" class="headerlink" title="（6）设置 侧栏"></a>（6）设置 侧栏</h3><h4 id="侧边栏位置"><a href="#侧边栏位置" class="headerlink" title="侧边栏位置"></a>侧边栏位置</h4><p>默认情况下，侧栏仅在文章页面（拥有目录列表）时才显示，并放置于右侧位置。 可以通过修改 主题配置文件 中的 sidebar 字段来控制侧栏的行为。侧栏的设置包括两个部分，其一是侧栏的位置， 其二是侧栏显示的时机。<br>设置侧栏的位置，修改 sidebar.position 的值，支持的选项有：  </p>
+<ul>
+<li>left - 靠左放置  </li>
+<li>right - 靠右放置  </li>
+</ul>
+<blockquote>
+<p>sidebar:<br>position: left  </p>
+</blockquote>
+<h4 id="设置侧栏显示的时机"><a href="#设置侧栏显示的时机" class="headerlink" title="设置侧栏显示的时机"></a>设置侧栏显示的时机</h4><p>修改 sidebar.display 的值，支持的选项有：</p>
+<ul>
+<li>post 默认行为，在文章页面（拥有目录列表）时显示  </li>
+<li>always 在所有页面中都显示  </li>
+<li>hide 在所有页面中都隐藏（可以手动展开）  </li>
+<li>remove 完全移除    </li>
+</ul>
+<blockquote>
+<p>sidebar:<br>display: post  </p>
+</blockquote>
+<h3 id="（7）设置-头像"><a href="#（7）设置-头像" class="headerlink" title="（7）设置 头像"></a>（7）设置 头像</h3><p>编辑 站点配置文件， 新增字段 avatar， 值设置成头像的链接地址。其中，头像的链接地址可以是：  </p>
+<p><img src="/img/搭建博客主题2/d.png" alt="image">  </p>
+<h2 id="打完收工"><a href="#打完收工" class="headerlink" title="打完收工"></a>打完收工</h2>
       
     </div>
 
@@ -431,8 +517,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/kenan.jpg"
@@ -485,6 +580,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#下载主题"><span class="nav-number">1.</span> <span class="nav-text">下载主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置主题"><span class="nav-number">2.</span> <span class="nav-text">配置主题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#（1）启用主题"><span class="nav-number">2.1.</span> <span class="nav-text">（1）启用主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（2）验证主题"><span class="nav-number">2.2.</span> <span class="nav-text">（2）验证主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（3）选择-Scheme"><span class="nav-number">2.3.</span> <span class="nav-text">（3）选择 Scheme</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（4）设置-语言"><span class="nav-number">2.4.</span> <span class="nav-text">（4）设置 语言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（5）设置-菜单"><span class="nav-number">2.5.</span> <span class="nav-text">（5）设置 菜单</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#设定菜单内容"><span class="nav-number">2.5.1.</span> <span class="nav-text">设定菜单内容</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置菜单项的显示文本"><span class="nav-number">2.5.2.</span> <span class="nav-text">设置菜单项的显示文本</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设定菜单项的图标"><span class="nav-number">2.5.3.</span> <span class="nav-text">设定菜单项的图标</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（6）设置-侧栏"><span class="nav-number">2.6.</span> <span class="nav-text">（6）设置 侧栏</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#侧边栏位置"><span class="nav-number">2.6.1.</span> <span class="nav-text">侧边栏位置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置侧栏显示的时机"><span class="nav-number">2.6.2.</span> <span class="nav-text">设置侧栏显示的时机</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（7）设置-头像"><span class="nav-number">2.7.</span> <span class="nav-text">（7）设置 头像</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#打完收工"><span class="nav-number">3.</span> <span class="nav-text">打完收工</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
     </div>

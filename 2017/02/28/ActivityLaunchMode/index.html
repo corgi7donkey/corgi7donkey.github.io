@@ -84,16 +84,16 @@
 
 
 
-<meta name="description" content="Activity启动模式分为四种：standard，singleTop，singleTask和singleInstance。可以在AndroidManifest.xml中通过给标签指定android：launchMode属性。">
+<meta name="description" content="Activity启动模式分为四种：Standard，SingleTop，SingleTask和SingleInstance。可以在AndroidManifest.xml中通过给标签指定android：launchMode属性。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Activity 启动模式">
 <meta property="og:url" content="http://corgi7donkey.github.io/2017/02/28/ActivityLaunchMode/index.html">
 <meta property="og:site_name" content="CorgiDonkey博客">
-<meta property="og:description" content="Activity启动模式分为四种：standard，singleTop，singleTask和singleInstance。可以在AndroidManifest.xml中通过给标签指定android：launchMode属性。">
-<meta property="og:updated_time" content="2017-02-28T07:36:49.863Z">
+<meta property="og:description" content="Activity启动模式分为四种：Standard，SingleTop，SingleTask和SingleInstance。可以在AndroidManifest.xml中通过给标签指定android：launchMode属性。">
+<meta property="og:updated_time" content="2017-02-28T10:22:32.261Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Activity 启动模式">
-<meta name="twitter:description" content="Activity启动模式分为四种：standard，singleTop，singleTask和singleInstance。可以在AndroidManifest.xml中通过给标签指定android：launchMode属性。">
+<meta name="twitter:description" content="Activity启动模式分为四种：Standard，SingleTop，SingleTask和SingleInstance。可以在AndroidManifest.xml中通过给标签指定android：launchMode属性。">
 
 
 
@@ -349,7 +349,7 @@
       
 
       
-        <p>Activity启动模式分为四种：standard，singleTop，singleTask和singleInstance。可以在AndroidManifest.xml中通过给<activity>标签指定android：launchMode属性。<br><a id="more"></a></activity></p>
+        <p>Activity启动模式分为四种：Standard，SingleTop，SingleTask和SingleInstance。可以在AndroidManifest.xml中通过给<activity>标签指定android：launchMode属性。<br><a id="more"></a></activity></p>
 <h3 id="（1）standard"><a href="#（1）standard" class="headerlink" title="（1）standard"></a>（1）standard</h3><p>默认的启动模式，启动新的Activity后，系统就会将其放入返回栈的栈顶。在启动Activity时，不管返回栈中是否有此Activity，都会新建一个放到栈顶。</p>
 <h3 id="（2）singleTop"><a href="#（2）singleTop" class="headerlink" title="（2）singleTop"></a>（2）singleTop</h3><p>顾名思义：唯一栈顶。也就是说当启动Activity时如果发现栈顶是该Activity，则可以直接使用，不创建活动的实例。</p>
 <h3 id="（3）singleTask"><a href="#（3）singleTask" class="headerlink" title="（3）singleTask"></a>（3）singleTask</h3><p>顾名思义：唯一任务（Activity）。当启动Activity时，系统会先检查返回栈中是否有该Activity，如果有就使用该实例，并把它之上的所有Activity出栈，如果没有就新建一个实例。</p>

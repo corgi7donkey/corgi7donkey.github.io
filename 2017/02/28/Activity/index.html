@@ -84,16 +84,16 @@
 
 
 
-<meta name="description" content="Activity之间回传数据">
+<meta name="description" content="Activity之间回传数据Activity1&amp;gt;&amp;gt;&amp;gt;Activity21234567bt.setOnClickListener(new OnClickListener() &amp;#123;					@Override			public void onClick(View v) &amp;#123;				Intent i=new Intent(MainActivity.this, Secon">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Activity之间回传数据">
 <meta property="og:url" content="http://corgi7donkey.github.io/2017/02/28/Activity/index.html">
 <meta property="og:site_name" content="CorgiDonkey博客">
-<meta property="og:description" content="Activity之间回传数据">
-<meta property="og:updated_time" content="2017-02-28T04:47:16.362Z">
+<meta property="og:description" content="Activity之间回传数据Activity1&amp;gt;&amp;gt;&amp;gt;Activity21234567bt.setOnClickListener(new OnClickListener() &amp;#123;					@Override			public void onClick(View v) &amp;#123;				Intent i=new Intent(MainActivity.this, Secon">
+<meta property="og:updated_time" content="2017-02-28T04:50:20.879Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Activity之间回传数据">
-<meta name="twitter:description" content="Activity之间回传数据">
+<meta name="twitter:description" content="Activity之间回传数据Activity1&amp;gt;&amp;gt;&amp;gt;Activity21234567bt.setOnClickListener(new OnClickListener() &amp;#123;					@Override			public void onClick(View v) &amp;#123;				Intent i=new Intent(MainActivity.this, Secon">
 
 
 
@@ -349,8 +349,8 @@
       
 
       
-        <h1 id="Activity之间回传数据"><a href="#Activity之间回传数据" class="headerlink" title="Activity之间回传数据"></a>Activity之间回传数据</h1><a id="more"></a>
-<h3 id="Activity1-gt-gt-gt-Activity2"><a href="#Activity1-gt-gt-gt-Activity2" class="headerlink" title="Activity1&gt;&gt;&gt;Activity2"></a>Activity1&gt;&gt;&gt;Activity2</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">bt.setOnClickListener(new OnClickListener() &#123;		</div><div class="line">			@Override</div><div class="line">			public void onClick(View v) &#123;</div><div class="line">				Intent i=new Intent(MainActivity.this, SecondActivity.class);</div><div class="line">				startActivityForResult(i, 0);</div><div class="line">			&#125;</div><div class="line">		&#125;);</div></pre></td></tr></table></figure>
+        <h1 id="Activity之间回传数据"><a href="#Activity之间回传数据" class="headerlink" title="Activity之间回传数据"></a>Activity之间回传数据</h1><h3 id="Activity1-gt-gt-gt-Activity2"><a href="#Activity1-gt-gt-gt-Activity2" class="headerlink" title="Activity1&gt;&gt;&gt;Activity2"></a>Activity1&gt;&gt;&gt;Activity2</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">bt.setOnClickListener(new OnClickListener() &#123;		</div><div class="line">			@Override</div><div class="line">			public void onClick(View v) &#123;</div><div class="line">				Intent i=new Intent(MainActivity.this, SecondActivity.class);</div><div class="line">				startActivityForResult(i, 0);</div><div class="line">			&#125;</div><div class="line">		&#125;);</div></pre></td></tr></table></figure>
+<a id="more"></a>
 <h3 id="Activity2-gt-gt-gt-Activity1并携带字符串”back-data-ok”"><a href="#Activity2-gt-gt-gt-Activity1并携带字符串”back-data-ok”" class="headerlink" title="Activity2&gt;&gt;&gt;Activity1并携带字符串”back_data**ok”"></a>Activity2&gt;&gt;&gt;Activity1并携带字符串”back_data**ok”</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">bt2.setOnClickListener(new OnClickListener() &#123;			</div><div class="line">			@Override</div><div class="line">			public void onClick(View v) &#123;</div><div class="line">				// TODO Auto-generated method stub</div><div class="line">				Intent i=new Intent();</div><div class="line">				i.putExtra(&quot;back_data&quot;, &quot;back_data**ok&quot;);</div><div class="line">				setResult(RESULT_OK, i);</div><div class="line">				finish();</div><div class="line">			&#125;</div><div class="line">		&#125;);</div></pre></td></tr></table></figure>
 <h3 id="Activity1重写onActivityResult方法获取回传数据"><a href="#Activity1重写onActivityResult方法获取回传数据" class="headerlink" title="Activity1重写onActivityResult方法获取回传数据"></a>Activity1重写onActivityResult方法获取回传数据</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">@Override</div><div class="line">	protected void onActivityResult(int requestCode, int resultCode, Intent data) &#123;</div><div class="line">		super.onActivityResult(requestCode, resultCode, data);</div><div class="line">		switch (requestCode) &#123;</div><div class="line">		case 0:</div><div class="line">			if (resultCode==RESULT_OK) &#123;</div><div class="line">				String back_data=data.getStringExtra(&quot;back_data&quot;);</div><div class="line">				Log.d(&quot;back_data&quot;, back_data);</div><div class="line">			&#125;</div><div class="line">			break;</div><div class="line">		default:</div><div class="line">			break;</div><div class="line">		&#125;</div><div class="line">	&#125;</div></pre></td></tr></table></figure>
 

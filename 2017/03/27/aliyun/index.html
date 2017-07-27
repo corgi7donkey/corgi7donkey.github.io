@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="code," />
+  <meta name="keywords" content="服务器," />
 
 
 
@@ -84,16 +84,30 @@
 
 
 
-<meta name="description" content="1，需要写一个操作activity集合的类ActivityList，其中有添加，移除，关闭所有Activity的方法。代码如下：">
+<meta name="description" content="###博客原由
+由于项目的需要，需要在阿里云ECS（windows服务器）上搭建后台。搭建成功后发现不能访问 http://www.xxx.com/出现以下图片，需要备案才可以，可是备案需要20个工作日才可以。。。
+
+这怎么办呢，那直接用ip如何呢，http://10.10.10.100/，可以访问。但是在微信中直接访问，由于安全会提醒用户是否进入该网站，这样用户就会望而却步。然后想到使用http">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关闭所有Activity（强制下线）">
-<meta property="og:url" content="http://corgi7donkey.github.io/2017/03/02/ForcedOffLine/index.html">
+<meta property="og:title" content="tomcat搭建https服务器+阿里云免费证书">
+<meta property="og:url" content="http://corgi7donkey.github.io/2017/03/27/aliyun/index.html">
 <meta property="og:site_name" content="CorgiDonkey博客">
-<meta property="og:description" content="1，需要写一个操作activity集合的类ActivityList，其中有添加，移除，关闭所有Activity的方法。代码如下：">
-<meta property="og:updated_time" content="2017-03-02T08:32:16.949Z">
+<meta property="og:description" content="###博客原由
+由于项目的需要，需要在阿里云ECS（windows服务器）上搭建后台。搭建成功后发现不能访问 http://www.xxx.com/出现以下图片，需要备案才可以，可是备案需要20个工作日才可以。。。
+
+这怎么办呢，那直接用ip如何呢，http://10.10.10.100/，可以访问。但是在微信中直接访问，由于安全会提醒用户是否进入该网站，这样用户就会望而却步。然后想到使用http">
+<meta property="og:image" content="http://img.blog.csdn.net/20170529184111333?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2piMTE1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170529190813782?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2piMTE1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170529191000361?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2piMTE1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170529205312702?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2piMTE1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:updated_time" content="2017-07-27T14:25:49.208Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="关闭所有Activity（强制下线）">
-<meta name="twitter:description" content="1，需要写一个操作activity集合的类ActivityList，其中有添加，移除，关闭所有Activity的方法。代码如下：">
+<meta name="twitter:title" content="tomcat搭建https服务器+阿里云免费证书">
+<meta name="twitter:description" content="###博客原由
+由于项目的需要，需要在阿里云ECS（windows服务器）上搭建后台。搭建成功后发现不能访问 http://www.xxx.com/出现以下图片，需要备案才可以，可是备案需要20个工作日才可以。。。
+
+这怎么办呢，那直接用ip如何呢，http://10.10.10.100/，可以访问。但是在微信中直接访问，由于安全会提醒用户是否进入该网站，这样用户就会望而却步。然后想到使用http">
+<meta name="twitter:image" content="http://img.blog.csdn.net/20170529184111333?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2piMTE1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 
 
 
@@ -121,13 +135,13 @@
 
 
 
-  <link rel="canonical" href="http://corgi7donkey.github.io/2017/03/02/ForcedOffLine/"/>
+  <link rel="canonical" href="http://corgi7donkey.github.io/2017/03/27/aliyun/"/>
 
 
 
 
 
-  <title> 关闭所有Activity（强制下线） | CorgiDonkey博客 </title>
+  <title> tomcat搭建https服务器+阿里云免费证书 | CorgiDonkey博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -258,7 +272,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://corgi7donkey.github.io/2017/03/02/ForcedOffLine/">
+  <link itemprop="mainEntityOfPage" href="http://corgi7donkey.github.io/2017/03/27/aliyun/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="CorgiDonkey">
@@ -282,7 +296,7 @@
             
             
               
-                关闭所有Activity（强制下线）
+                tomcat搭建https服务器+阿里云免费证书
               
             
           </h1>
@@ -295,8 +309,8 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-02T16:16:10+08:00">
-                2017-03-02
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-27T22:23:04+08:00">
+                2017-03-27
               </time>
             
 
@@ -305,24 +319,6 @@
             
           </span>
 
-          
-            <span class="post-category" >
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/android/" itemprop="url" rel="index">
-                    <span itemprop="name">android</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -349,9 +345,22 @@
       
 
       
-        <p>1，需要写一个操作activity集合的类ActivityList，其中有添加，移除，关闭所有Activity的方法。代码如下：<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line">package com.bupt.adroidlearn;</div><div class="line"></div><div class="line">import java.util.ArrayList;</div><div class="line">import java.util.List;</div><div class="line">import android.app.Activity;</div><div class="line"></div><div class="line">public class ActivityList &#123;</div><div class="line">	public static List&lt;Activity&gt; activitys=new ArrayList&lt;Activity&gt;();</div><div class="line">	/**</div><div class="line">	 * 向Activity集合中添加Activity</div><div class="line">	 * @param activity</div><div class="line">	 */</div><div class="line">	public static void addActivity(Activity activity)&#123;</div><div class="line">		activitys.add(activity);</div><div class="line">	&#125;</div><div class="line">	/**</div><div class="line">	 * 从Activity集合中移除Activity</div><div class="line">	 * @param activity</div><div class="line">	 */</div><div class="line">	public static void removeActivity(Activity activity)&#123;</div><div class="line">		activitys.remove(activity);</div><div class="line">	&#125;</div><div class="line">	/**</div><div class="line">	 * 关闭所有Activity</div><div class="line">	 */</div><div class="line">	public static void finishAllActivitys()&#123;</div><div class="line">		for (Activity activity : activitys) &#123;</div><div class="line">			if (!activity.isFinishing()) &#123;</div><div class="line">				activity.finish();</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>2，需要些一个基类BaseActivity继承Activity，以后创建的Activity都继承BaseActivity。在onCreate方法里将当前Activity添加到ActivityList中，在onDestroy方法中讲当前Activity从ActivityList中移除。代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">package com.bupt.adroidlearn;</div><div class="line"></div><div class="line">import android.app.Activity;</div><div class="line">import android.os.Bundle;</div><div class="line">public class BaseActivity extends Activity&#123;</div><div class="line">	@Override</div><div class="line">	protected void onCreate(Bundle savedInstanceState) &#123;</div><div class="line">		super.onCreate(savedInstanceState);</div><div class="line">		ActivityList.addActivity(this);//添加</div><div class="line">	&#125;</div><div class="line">	@Override</div><div class="line">	protected void onDestroy() &#123;</div><div class="line">		super.onDestroy();</div><div class="line">		ActivityList.removeActivity(this);//移除</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>3，在需要强行下线的地方可以发送一个广播，并在广播里并在广播接收器中调用ActivityList.finishAllActivitys()方法，再重新创建登录界面。代码略。。。</p>
+        <p>###<strong>博客原由</strong></p>
+<p>由于项目的需要，需要在阿里云ECS（windows服务器）上搭建后台。搭建成功后发现不能访问 <a href="http://www.xxx.com/出现以下图片，需要备案才可以，可是备案需要20个工作日才可以。。。" target="_blank" rel="external">http://www.xxx.com/出现以下图片，需要备案才可以，可是备案需要20个工作日才可以。。。</a></p>
+<p><img src="http://img.blog.csdn.net/20170529184111333?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2piMTE1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>这怎么办呢，那直接用ip如何呢，<a href="http://10.10.10.100/，可以访问。但是在微信中直接访问，由于安全会提醒用户是否进入该网站，这样用户就会望而却步。然后想到使用https是不是就没有安全问题的提醒了呢？结果证明这种想法是对的，将配置步骤记录下来。" target="_blank" rel="external">http://10.10.10.100/，可以访问。但是在微信中直接访问，由于安全会提醒用户是否进入该网站，这样用户就会望而却步。然后想到使用https是不是就没有安全问题的提醒了呢？结果证明这种想法是对的，将配置步骤记录下来。</a></p>
+<p>###配置过程</p>
+<p>####绑定域名和IP<br>首先通过阿里云教程备案，网址：<br><a href="https://help.aliyun.com/knowledge_detail/36922.html" target="_blank" rel="external">https://help.aliyun.com/knowledge_detail/36922.html</a></p>
+<p>进入备案管理界面，点击申请</p>
+<p><img src="http://img.blog.csdn.net/20170529190813782?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2piMTE1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>绑定成功就OK了，不用去备案</p>
+<p><img src="http://img.blog.csdn.net/20170529191000361?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2piMTE1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>####证书申请<br>阿里云免费证书申请，网址：<br><a href="https://common-buy.aliyun.com/?spm=5176.2020520163.cas.1.00mf7z&amp;commodityCode=cas#/buy" target="_blank" rel="external">https://common-buy.aliyun.com/?spm=5176.2020520163.cas.1.00mf7z&amp;commodityCode=cas#/buy</a><br>购买完成后进入阿里云证书服务，按照流程生成PFX证书。</p>
+<p><img src="http://img.blog.csdn.net/20170529205312702?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2piMTE1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>安装PFX证书用到的软件有perl+vs2010+openssl(版本1.0.1g，经过验证此版本容易成功)<br>openssl下载地址：<a href="http://download.csdn.net/detail/sjb115/9855559" target="_blank" rel="external">http://download.csdn.net/detail/sjb115/9855559</a><br>perl下载地址：<a href="https://www.perl.org/get.html" target="_blank" rel="external">https://www.perl.org/get.html</a></p>
+<p>####配置tomcat<br>打开 Tomcat 配置文件 conf\server.xml。<br>取消注释，并添加三个属性 keystoreFile，keystoreType，keystorePass。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">Connector</span> <span class="attr">port</span>=<span class="string">"8443"</span> <span class="attr">protocol</span>=<span class="string">"HTTP/1.1"</span> <span class="attr">SSLEnabled</span>=<span class="string">"true"</span> <span class="attr">maxThreads</span>=<span class="string">"150"</span> <span class="attr">scheme</span>=<span class="string">"https"</span> <span class="attr">secure</span>=<span class="string">"true"</span> <span class="attr">clientAuth</span>=<span class="string">"false"</span> <span class="attr">sslProtocol</span>=<span class="string">"TLS"</span> <span class="attr">keystoreFile</span>=<span class="string">"pfx的地址（用绝对地址，如D:xxx/xxxx.pfx）"</span> <span class="attr">keystoreType</span>=<span class="string">"PKCS12"</span> <span class="attr">keystorePass</span>=<span class="string">"密码"</span> /&gt;</span></div></pre></td></tr></table></figure>
+<p>####结束<br>最后输入<a href="https://你得域名/你的工程xxx，验证成功！" target="_blank" rel="external">https://你得域名/你的工程xxx，验证成功！</a></p>
 
       
     </div>
@@ -375,7 +384,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/code/" rel="tag"># code</a>
+            <a href="/tags/服务器/" rel="tag"># 服务器</a>
           
         </div>
       
@@ -384,8 +393,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/03/02/ListviewOptimization/" rel="next" title="Listview优化">
-                <i class="fa fa-chevron-left"></i> Listview优化
+              <a href="/2017/03/07/BroadcastReceiver/" rel="next" title="BroadcastReceiver的一些知识">
+                <i class="fa fa-chevron-left"></i> BroadcastReceiver的一些知识
               </a>
             
           </div>
@@ -393,10 +402,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/03/07/BroadcastReceiver/" rel="prev" title="BroadcastReceiver的一些知识">
-                BroadcastReceiver的一些知识 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>

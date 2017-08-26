@@ -84,22 +84,16 @@
 
 
 
-<meta name="description" content="题目给定一个整数的数组，相邻的数不能同时选，求从该数组选取若干整数，使得他们的和最大
-思路in（i）:表示包含arr[i]的最大值ex（i）：表示不包含arr[i]的最大值in(i)=ex(i-1)+arr[i];ex(i)=max[in(i-1),ex(i-1)];
-代码1234567891011public static int getMax(int[] arr) &amp;#123;		if (ar">
+<meta name="description" content="题目给定一个整数的数组，相邻的数不能同时选，求从该数组选取若干整数，使得他们的和最大">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数组不相邻数最大求和">
 <meta property="og:url" content="http://corgi7donkey.github.io/2017/08/26/CategoriesMaxSum/index.html">
 <meta property="og:site_name" content="CorgiDonkey博客">
-<meta property="og:description" content="题目给定一个整数的数组，相邻的数不能同时选，求从该数组选取若干整数，使得他们的和最大
-思路in（i）:表示包含arr[i]的最大值ex（i）：表示不包含arr[i]的最大值in(i)=ex(i-1)+arr[i];ex(i)=max[in(i-1),ex(i-1)];
-代码1234567891011public static int getMax(int[] arr) &amp;#123;		if (ar">
-<meta property="og:updated_time" content="2017-08-26T04:08:13.492Z">
+<meta property="og:description" content="题目给定一个整数的数组，相邻的数不能同时选，求从该数组选取若干整数，使得他们的和最大">
+<meta property="og:updated_time" content="2017-08-26T04:37:39.346Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数组不相邻数最大求和">
-<meta name="twitter:description" content="题目给定一个整数的数组，相邻的数不能同时选，求从该数组选取若干整数，使得他们的和最大
-思路in（i）:表示包含arr[i]的最大值ex（i）：表示不包含arr[i]的最大值in(i)=ex(i-1)+arr[i];ex(i)=max[in(i-1),ex(i-1)];
-代码1234567891011public static int getMax(int[] arr) &amp;#123;		if (ar">
+<meta name="twitter:description" content="题目给定一个整数的数组，相邻的数不能同时选，求从该数组选取若干整数，使得他们的和最大">
 
 
 
@@ -301,7 +295,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-26T10:26:28+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-26T10:27:28+08:00">
                 2017-08-26
               </time>
             
@@ -355,7 +349,7 @@
       
 
       
-        <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p>给定一个整数的数组，相邻的数不能同时选，求从该数组选取若干整数，使得他们的和最大</p>
+        <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p>给定一个整数的数组，相邻的数不能同时选，求从该数组选取若干整数，使得他们的和最大<br><a id="more"></a></p>
 <h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>in（i）:表示包含arr[i]的最大值<br>ex（i）：表示不包含arr[i]的最大值<br>in(i)=ex(i-1)+arr[i];<br>ex(i)=max[in(i-1),ex(i-1)];</p>
 <h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">getMax</span><span class="params">(<span class="keyword">int</span>[] arr)</span> </span>&#123;</div><div class="line">		<span class="keyword">if</span> (arr == <span class="keyword">null</span> || arr.length == <span class="number">0</span>)</div><div class="line">			<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">		<span class="keyword">int</span> inI=arr[<span class="number">0</span>];<span class="keyword">int</span> exI=<span class="number">0</span>;</div><div class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; arr.length; i++) &#123;</div><div class="line">			<span class="keyword">int</span> inn=exI+arr[i];</div><div class="line">			exI=Math.max(inI, exI);</div><div class="line">			inI=inn;</div><div class="line">		&#125;</div><div class="line">		<span class="keyword">return</span> Math.max(exI, inI);</div><div class="line">	&#125;</div></pre></td></tr></table></figure>
 
